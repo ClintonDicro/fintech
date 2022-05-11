@@ -1,0 +1,801 @@
+{
+	"info": {
+		"_postman_id": "63583330-cfd5-4b62-8790-b1f0ebb08e42",
+		"name": "pro_fin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teams",
+			"item": [
+				{
+					"name": "leader",
+					"item": [
+						{
+							"name": "delete leader",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/leader/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"leader",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add leader",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"user_id\":\"2\",\r\n    \"name\":\"dicro\",\r\n    \"dob\":\"12-10-1997\",\r\n    \"image_path\":\"\",\r\n    \"gender\":0,\r\n    \"address\":\"poothurai\",\r\n    \"city\":\"poothurai\",\r\n    \"state\":\"tamilnadu\",\r\n    \"district\":\"kanyakumari\",\r\n    \"pincode\":629176,\r\n    \"auth_type_id\":1,\r\n    \"auth_data\":\"23456789\",\r\n    \"auth_path\":\"\",\r\n    \"mobile_no\":12345676804,\r\n    \"join_date\":\"12-12-2000\",\r\n    \"incharge_id\":2,\r\n    \"status\":\"start\",\r\n    \"last_status_change_date\":\"12-10-2005\",\r\n    \"nominee_name\":\"clinton\",\r\n    \"nominee_dob\":\"01-01-2000\",\r\n    \"nominee_mobile_number\":143459890,\r\n    \"nominee_aadhar_no\":94765431,\r\n    \"nominee_relation\":\"brother\"\r\n}"
+								},
+								"url": {
+									"raw": "localhost:5000/leader",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"leader"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one leader",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/leader/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"leader",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get leader",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/leader/1/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"leader",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update leader",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"user_id\":\"2\",\r\n    \"name\":\"dicro\",\r\n    \"dob\":\"12-10-1997\",\r\n    \"image_path\":\"\",\r\n    \"gender\":0,\r\n    \"address\":\"poothurai\",\r\n    \"city\":\"poothurai\",\r\n    \"state\":\"tamilnadu\",\r\n    \"district\":\"kanyakumari\",\r\n    \"pincode\":629176,\r\n    \"auth_type_id\":1,\r\n    \"auth_data\":\"23456789\",\r\n    \"auth_path\":\"\",\r\n    \"mobile_no\":12345676804,\r\n    \"join_date\":\"12-12-2000\",\r\n    \"incharge_id\":2,\r\n    \"status\":\"start\",\r\n    \"last_status_change_date\":\"12-10-2005\",\r\n    \"nominee_name\":\"clinton\",\r\n    \"nominee_dob\":\"01-01-2000\",\r\n    \"nominee_mobile_number\":143459890,\r\n    \"nominee_aadhar_no\":94765431,\r\n    \"nominee_relation\":\"brother\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/leader/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"leader",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member",
+					"item": [
+						{
+							"name": "get member",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member/1/5",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member",
+										"1",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get on member",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member/2",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add member",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"user_id\":\"1\",\r\n    \"name\":\"clinton\",\r\n    \"dob\":\"12-10-1997\",\r\n    \"image_path\":\"\",\r\n    \"gender\":0,\r\n    \"address\":\"poothurai\",\r\n    \"city\":\"poothurai\",\r\n    \"state\":\"tamilnadu\",\r\n    \"district\":\"kanyakumari\",\r\n    \"pincode\":629176,\r\n    \"auth_type_id\":1,\r\n    \"auth_data\":\"677\",\r\n    \"auth_path\":\"\",\r\n    \"mobile_no\":124567701,\r\n    \"join_date\":\"12-12-2000\",\r\n    \"leader_id\":1,\r\n    \"incharge_id\":2,\r\n    \"status\":0,\r\n    \"last_status_change_date\":\"12-10-2005\",\r\n    \"nominee_name\":\"clinton\",\r\n    \"nominee_dob\":\"01-01-2000\",\r\n    \"nominee_mobile_number\":23456980,\r\n    \"nominee_aadhar_no\":98754331,\r\n    \"nominee_relation\":\"brother\"\r\n}"
+								},
+								"url": {
+									"raw": "localhost:5000/member",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete member",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member/2",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update member",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "incharge",
+					"item": [
+						{
+							"name": "get incharge",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/incharge/1/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"incharge",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one incharge",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/incharge/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"incharge",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add incharge",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"rahul\",\r\n    \"dob\":\"12-12-2000\",\r\n    \"gender\":\"1\",\r\n    \"image_path\":\"\",\r\n    \"city\":\"sdasd\";\r\n    \"address\":\"dfsd\",\r\n    \"state\":\"sdfsd\",\r\n    \"pincode\":\"123456\",\r\n    \"aadhar_no\":\"321456\",\r\n    \"join_date\":\"12-12-2020\",\r\n    \"salary\":12000.00,\r\n}"
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete incharge",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update incharge",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"rahul\",\r\n    \"dob\":\"12-12-2000\",\r\n    \"gender\":\"1\",\r\n    \"image_path\":\"\",\r\n    \"city\":\"sdasd\",\r\n    \"address\":\"dfsd\",\r\n    \"state\":\"sdfsd\",\r\n    \"pincode\":\"123456\",\r\n    \"aadhar_no\":\"321456\",\r\n    \"join_date\":\"12-12-2020\",\r\n    \"salary\":12000.00,\r\n    \"relieving_date\":\"2020-12-12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/incharge/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"incharge",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"\",\r\n    \"password\":\"\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/user_login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user_login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "app user",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "app app user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role_id\":\"\",\r\n    \"user_name\":\"\",\r\n    \"image_path\":\"\",\r\n    \"mobile\":\"\",\r\n    \"name\":\"\",\r\n    \"email\":\"\",\r\n    \"password\":\"\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/app_user",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"app_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one app user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/app_users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"app_users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/app_users/1/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"app_users",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "common data",
+			"item": [
+				{
+					"name": "member list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/member_list",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"member_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leader list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/leader_list",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"leader_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incharger list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/incharge_list",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"incharge_list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "funds",
+			"item": [
+				{
+					"name": "santha payment",
+					"item": [
+						{
+							"name": "santha_payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/santha_payment/1/2",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha_payment",
+										"1",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "santha payment by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/santha_payment/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha_payment",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add santha payment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\":1,\r\n    \"santha_for_year\":2000,\r\n    \"santha_amount_received\":100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/santha",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update santha payment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\":1,\r\n    \"santha_for_year\":2000,\r\n    \"santha_amount_received\":100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/santha/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete santha",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/santha_payment/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha_payment",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "santha",
+					"item": [
+						{
+							"name": "santha",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/santha/1/2",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"santha",
+										"1",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member_savings",
+					"item": [
+						{
+							"name": "member savings all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member_savings_all",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member_savings_all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member_savings_payment",
+					"item": [
+						{
+							"name": "member saving payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/all_member_savings-payment/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"all_member_savings-payment",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add member savings",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\":\"\",\r\n    \"payment-amount\":1200\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/member_savings",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member_savings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update member saving payment",
+							"request": {
+								"method": "PUT",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "delete member savings details",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member_savings/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member_savings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member saving withdraww",
+					"item": [
+						{
+							"name": "member withdraw",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "add member savings withdraw",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"member_id\":\"\",\r\n    \"payment-amount\":1200\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5000/member_savings",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member_savings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete member withdraw detail",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:5000/member_savings/1",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"member_savings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
